@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color1: hsl(32, 92%, 52%);
+    --color2: #000000;
+    --color3: #ffffff;
+    --color4: #265561;
+    --color5: #049da8;
+}
+
+/* inner-cards styles*/
+.inner-cards{
+    background-color: var(--color3);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+.inner-card{
+   background-color: var(--color1) ;  
+   min-height: 400;
+   max-width: 300px;
+   padding: 40px;
+   position: relative;
+   border-radius: 5px;
+   overflow: hidden;
+}
+
+.inner-card h1{
+    text-transform: uppercase;
+    color: var(--color3);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 300;
+}
+
+.inner-card p{
+    color: var(--color3);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 200;
+    margin-top: 30px;
+    margin-bottom: 100px ;
+}
+
+.inner-card button{
+    position: absolute;
+    background-color: var(--color3);
+    color: var(--color1);
+    text-align: center;
+    padding: 12px 18px;
+    border: 2px solid var(--color3);
+    bottom: 0;
+    border-radius: 30px;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+/* first inner-card*/
+.first{
+   background-color: var(--color1);
+}
+
+.first button{
+    color: var(--color1);
+}
+
+/* second inner-card*/
+.second{
+   background-color: var(--color5);
+}
+
+.second button{
+    color: var(--color5);
+}
+
+/* third inner card*/
+.third{
+   background-color: var(--color4);
+}
+
+.third button{
+   color: var(--color4);
+}
+
+button:hover{
+    background-color: transparent;
+    color: var(--color3);
+}
+
+@media (max-width:950px) {
+    .inner-cards{
+        flex-direction: column;
+        padding: 5rem 0;
+    }
+    .inner-cards{
+       min-width: 22rem;
+    }
+}
